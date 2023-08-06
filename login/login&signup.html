@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="L&S.css">
+    <title>Form</title>
+    <style>
+        .mobile-screen{
+            overflow: hidden;
+        }
+        .login{
+            margin-top: -20%;
+            transition: 0.5s;
+            /* border: solid black; */
+        }
+        form{
+            margin-top: 100%;
+            transition: 0.5s;
+        }
+    </style>
+    <script src="jQuery.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#signup").click(function (){
+                $(".login").css("margin-top", "-213%");
+            });
+            $("#login").click(function (){
+                $(".login").css("margin-top", "-20%");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="greet">
+            <h4>Welcome to the</h4>
+            <h1>Mobile Mania</h1>
+            <h6>Online mobile shopping website</h6>
+        </div>
+        <div class="mobile">
+            <div class="mobile-bezzel">
+                <div class="speaker"></div>
+                <div class="mobile-screen">
+
+                    <div class="login">
+                        <form id="registration-form" action="#" method="#">
+                            <p>Log in here</p>
+    
+                            <label id="label_e">Email</label>
+                            <input type="text" id="email"><br>
+    
+                            <label id="label_p">Password</label>
+                            <input type="password" id="password"><br>
+    
+                            <button class="submit" type="submit">Log in</button>
+                            <button id="signup">Sign up</button>
+                            <!-- <a class="register" href="signup.html">Sign up here</a> -->
+                        </form>
+                    </div>
+
+                    <div class="signup">
+                        <form id="registration-form" action="#" method="#">
+                            <p>Sign up here</p>
+
+                            <label id="label-n">Name</label>
+                            <input id="name" type="text">
+
+                            <label id="label-e">Email</label>
+                            <input id="email" type="text">
+
+                            <label id="Label-m">Mobile Number</label>
+                            <input id="mobile" type="text">
+
+                            <label id="label-a">Address</label>
+                            <textarea id="" cols="15" rows="5"></textarea>
+
+                            <label id="label-p">Password</label>
+                            <input id="password" type="password">
+
+                            <label id="label-cp">Confirm Password</label>
+                            <input id="cnfpassword" type="password"><br>
+
+                            <button class="submit" type="submit">Sign up</button>
+                            <button id="login">Log in</button>
+                            <!-- <a class="register" href="login.html">Log in here</a> -->
+                        </form>
+                    </div>
+
+                </div>
+                <img class="recent" src="icon/recent.png" alt="home button" srcset="">
+                <img class="back" src="icon/back.png" alt="home button" srcset="">
+                <div class="home-outer"></div>
+                <div class="home-inner"></div>
+                <!-- <img class="home" src="icon/home.png" alt="home button" srcset=""> -->
+            </div>
+        </div>
+    </div>
+</body>
