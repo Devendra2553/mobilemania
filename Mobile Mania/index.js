@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    
+
     $("#btn-to-signup").click(function () {
-        $(".login").css("margin-top", "-500px");
+        $(".login").css("margin-top", "-515px");
     });
     $("#btn-to-login").click(function () {
         $(".login").css("margin-top", "0px");
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
         var email = $("#email").val();
         var password = $("#password").val();
-2
+        
         if (email == "" || password == "") {
 
             $("#label-login").css("background-color", "maroon");
@@ -29,4 +29,8 @@ $(document).ready(function () {
             return false;
         }
     });
+    $("#signup-form").submit(function () {
+        $("#btn-signup").css("background-color", "white").css("color", "#4b5c78").css("border", "1px solid #4b5c78");
+        $("#btn-to-login").css("background-color", "#4b5c78").css("color", "white").css("border", "1px solid #4b5c78");
+    })
 });

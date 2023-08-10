@@ -1,11 +1,11 @@
 body {
     background-color: #4b5c78;
-    /* background-image: linear-gradient(#263347, #4b5c78, #263347); */
+    background-image: linear-gradient(#263347, #4b5c78, #263347);
 }
 
 form {
     display: grid;
-    margin-top: 126px;
+    margin-top: 135px;
     transition: 0.5s;
     /* border: solid black; */
 }
@@ -23,7 +23,8 @@ button{
     text-align: center;
     color:#4b5c78;
     background-color: #ffffff;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
+    cursor: pointer;
 }
 
 #btn-login, #btn-signup {
@@ -33,11 +34,17 @@ button{
     border: 0px;
     background-color: #4b5c78;
     color: white;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
+    cursor: pointer;
 }
 
 button:hover, #btn-login:hover, #btn-signup:hover{
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+button:active, #btn-login:active, #btn-signup:active{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    transform: translateY(4px);
 }
 
 input, textarea {
