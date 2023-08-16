@@ -1,4 +1,4 @@
-# mobilemania a online mobile shopping web-app demo.
+# mobilemania an amature made online mobile shopping web-app demo.
 
 this project was made by using basic HTML, CSS and JAVASCRIPT,
 for backend i used PHP and MYSQL for databse.
